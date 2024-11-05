@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav class="flex justify-between">    
+                <div class="font-bold flex item-center bg-red">FITTNESS POINT</div>
+                <ul class="navbar flex item-center">
+                    <li>Home</li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li>Services</li>
+                    <li>contact Us</li>
+                    <li><button class="btn" id="join-btn">Join now</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="section1 overflow-hidden">
+            <div class="flex">
+                <div class="topleft flex item-center flex-col px-2">
+                    <img class="logo-img" src="gym logo.jpg" alt="">
+                    <h1 class="my-1">THE BEST GYM IN THE TOWN IS HERE</h1>
+                    <p class="paragraph">
+                        Welcome to Fittness Point  Where Fitness Meets Excellence!
+
+                        At Fittnes Point, we believe that fitness is a lifestyle, not a destination. 
+                        Whether you're just starting your fitness journey or you're a seasoned 
+                        athlete, our state-of-the-art facility and expert trainers are here to help 
+                        you reach your goals. From cutting-edge equipment and innovative workout 
+                        classes to personalized training plans, we provide a motivating and 
+                        supportive environment for all fitness levels. Join us today and take the 
+                        first step toward a healthier, stronger, and more confident you!
+                    </p>
+                </div>
+                <div class="topright">
+                    <img src="gym.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        
+        <section class="contact-section">
+            <h1>Contact Us</h1>
+            <p>If you have any questions or would like to know more about our gym, please reach out to us using the form below.</p>
+
+            <form id="contact-form">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn2">Submit</button>
+            </form>
+
+            <p id="success-message" style="display:none; color:green;">Your message has been successfully sent!</p>
+            <p id="error-message" style="display:none; color:red;">Please fill in all fields correctly.</p>
+        </section>
+
+
+        <footer class="footer">
+            <div class="footer-content">
+                <p>&copy; 2024 Fitness Point. All Rights Reserved.</p>
+                <p>Address: 123 Dewas (M.P)</p>
+                <p>Phone: <a href="tel:9893740488">9893740488</a></p> 
+                <p>Email: <a href="mailto:shubhampatel98937@gmail.com">shubhampatel98937@gmail.com</a></p>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </footer>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

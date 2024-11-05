@@ -1,0 +1,285 @@
+.container{
+    background-color: black;
+}
+
+.navbar li{
+    list-style: none;
+    margin: 0 25px; 
+}
+
+.navbar{
+    display: flex;
+    height: 60px;
+    background-color: rgb(170 177 180);
+    font-size: 16px;
+    font: bold;
+}
+.logo-img{
+    width: 90px;
+
+}
+.btn{
+    padding: 5px 40px;
+    border: 2px solid black;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(29, 88, 214);
+    align-items: center;
+}
+.font-bold{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.my-1{
+    margin-top: 13px;
+    margin-bottom: 13px;
+    font-size: 20PX;
+}
+
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.item-center{
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+.topleft{
+    width: 50%; 
+    background-color: white;
+    border-radius: 30px;
+    border: 5px solid black;
+}
+.topleft {
+    width: 50%;                 
+    background-color: white;     
+    border-radius: 15px;         
+    border: 3px solid #28a745;   
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.paragraph{
+    margin-left: 40px;
+    margin-right: 80px;
+}
+
+.topleft:hover {
+    transform: scale(1.02);      
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .topleft {
+        width: 100%;              
+        padding: 15px; 
+    }
+}
+
+.topright{
+    width: 50%;
+    /* height: 50vh; */
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
+.section1 {
+    display: flex;            
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 40px; 
+    border-radius: 15px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+    margin: 20px 0;              
+}
+
+
+/* contact page css */
+
+.contact-section{
+    color: white;
+}
+.contact-section h1 {
+    text-align: center;
+}
+
+.contact-section p {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    /* padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px; */
+}
+
+form button {
+    padding: 10px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+#success-message, #error-message {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn2 {
+    padding: 14px 40px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(11, 170, 19);
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+
+.footer {
+    background-color: rgb(153, 162, 165); 
+    color: black; 
+    padding: 30px; 
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    /* width: 100%; */
+    border-top: 3px solid rgb(29, 88, 214);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto; 
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: rgb(29, 88, 214);
+    text-decoration: underline;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; 
+        height: auto; 
+    }
+
+    .navbar li {
+        margin: 10px 0; 
+    }
+
+    .flex {
+        flex-direction: column; 
+    }
+
+    .topleft, .topright {
+        width: 100%; 
+    }
+
+    .logo-img {
+        width: 70px; 
+    }
+
+    .contact-section {
+        padding: 20px; 
+    }
+
+    .footer {
+        padding: 20px; 
+    }
+
+    .btn, .btn2 {
+        width: 100%; 
+        padding: 10px; 
+    }
+
+    .section1 {
+        flex-direction: column;    
+        padding: 20px;             
+    }
+
+    .topleft, .topright {
+        width: 100%;               
+    }
+}
+
+
+
+@media (max-width: 480px) {
+    .font-bold {
+        font-size: 24px; 
+    }
+    .paragraph {
+        margin-left: 130px;
+        margin-right: 190px;
+    }
+
+    .my-1 {
+        margin: 5px 0;
+        font-size: small;
+    }
+    
+    .contact-section h1 {
+        font-size: 24px;
+    }
+}
+
+
